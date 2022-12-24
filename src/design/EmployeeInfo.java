@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+/*public class EmployeeInfo {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,7 +20,7 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
-	static String companyName;
+	/*static String companyName;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -32,12 +32,12 @@ public class EmployeeInfo {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
+	/*public EmployeeInfo(int employeeId){
 		
 	}
     public EmployeeInfo(String name, int employeeId){
 		
-	}
+	}*/
 	
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
@@ -47,7 +47,7 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+	/*public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
 		int total=0;
 		return total;
 	}
@@ -58,7 +58,7 @@ public class EmployeeInfo {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
+/*	public static int calculateEmployeePension(){
 		int total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
@@ -134,4 +134,4 @@ public class EmployeeInfo {
 
 		}
 	}
-}
+}*/
