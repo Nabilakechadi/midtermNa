@@ -25,13 +25,7 @@ git push -u origin master
 
 -----------------------------------------------------------------
 
-*** next pushes:
-
-git add .
-
-git commit -m "name of the topic"
-
-git push -u origin master
+*** next pushes
 
 -----------------------------------------------------------------
 

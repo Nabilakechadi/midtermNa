@@ -10,7 +10,7 @@ public class UseMap {
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
-
+		Map<String, List<string>> list = new HashMap<String, List<String>>();
 	}
 
 }
