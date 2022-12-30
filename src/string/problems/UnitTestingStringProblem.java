@@ -1,4 +1,4 @@
-package string.problems;
+/*package string.problems;
 import org.junit.Assert;
 
 import java.util.Arrays;
@@ -10,7 +10,7 @@ public class UnitTestingStringProblem {
 
     /*}
 }*/
-    public static void main(String args[]) {
+  /*  public static void main(String args[]) {
 
         String str1="cat";
 

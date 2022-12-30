@@ -1,4 +1,4 @@
-package design;
+/*package design;
 
 /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -16,7 +16,7 @@ package design;
 /*
  * declare few static and final fields and some non-static fields
  */
-static String companyName;
+/*static String companyName;
 
 /*
  * You must implement the logic for below 2 methods and
@@ -28,12 +28,12 @@ static String companyName;
  * you must have multiple constructor.
  * Must implement below constructor.
  */
-public EmployeeInfo(int employeeId){
+/*public EmployeeInfo(int employeeId){
 
 		}
 public EmployeeInfo(String name, int employeeId){
 
-		}
+		}*/
 
 /*
  * This methods should calculate Employee bonus based on salary and performance.
@@ -43,7 +43,7 @@ public EmployeeInfo(String name, int employeeId){
  * So you probably need to send 2 arguments.
  *
  */
-public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+/*public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
 		int total=0;
 		return total;
 		}
@@ -54,7 +54,7 @@ public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
  * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
  *
  */
-public static int calculateEmployeePension(){
+/*public static int calculateEmployeePension(){
 		int total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
@@ -69,11 +69,11 @@ public static int calculateEmployeePension(){
 
 
 
-		return total;
+	/*	return total;
 		}
-private static class DateConversion {
+/*private static class DateConversion {
 
-	public DateConversion(Months months){}
+	/*public DateConversion(Months months){}
 	public static String convertDate(String date) {
 		String [] extractMonth = date.split(",");
 		String givenMonth = extractMonth[0];
@@ -82,7 +82,7 @@ private static class DateConversion {
 		return actualDate;
 	}
 
-	public static int whichMonth(String givenMonth) {
+	/*public static int whichMonth(String givenMonth) {
 		Months months = Months.valueOf(givenMonth);
 		int date = 0;
 		switch (months) {
@@ -128,6 +128,4 @@ private static class DateConversion {
 		}
 		return date;
 
-	}
-}
-}
+	}*/
