@@ -1,8 +1,11 @@
-package datastructure;
+/*package datastructure;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
 
 public class UseMap {
 
-	public static void main(String[] args) {
+	public static <DataObject> void main(String[] args) {
 		/*
 		 * Demonstrate how to use Map that includes storing and retrieving elements.
 		 * Add List<String> into a Map. Like, Map<String, List<string>> list = new HashMap<String, List<String>>();
@@ -10,7 +13,7 @@ public class UseMap {
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
-		Map<String, List<string>> list = new HashMap<String, List<String>>();
-	}
+	/*	Map<String, List<string>> list = new HashMap<String, List<String>>();
+	}*/
 
-}
+

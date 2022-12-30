@@ -56,6 +56,7 @@ public  class UseArrayList {
 		System.out.println("AFTER REMOVING EIGHT");
 		while (it.hasNext()) {
 			System.out.println(it.next());
+
 		}
 
 		}

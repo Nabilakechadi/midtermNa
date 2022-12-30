@@ -11,23 +11,22 @@ public class UnitTestingStringProblem {
     /*}
 }*/
     public static void main(String args[]) {
-        String str1 = "cat";
-        String str2 = "cta";
-        if (str1.length() == str2.length()) {
 
-            char[] firstCharArr = (str1.toLowerCase()).toCharArray();
+        String str1="cat";
 
 
-            char[] secondCharArr = (str2.toLowerCase()).toCharArray();
 
 
             Anagram ana = new Anagram();
-            Assert.assertEquals(true, true);
-            Assert.assertEquals(false,false);
+String expectedResult = str1;
+
+String  wordTest= str1;
+            Assert.assertEquals(expectedResult , ana.getClass(wordTest));
+
 
         }
     }
-}
+
     /*public static void main(String args[]) {
         String str = "david";
         StringBuilder sb = new StringBuilder(str);

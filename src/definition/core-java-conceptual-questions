@@ -178,7 +178,7 @@ Difference between jUnit and testNG?
 -JUnit is a framework that is open-source and may be used to write and trigger tests. TestNG is a Java-based
 framework that provides an improved way to run tests.
 What are the dependencies for this project?
--
+-Maeven , Junit,MongoDB, MySQL Connector.
 what is dependency injection in java?
 - is a way to achieve Inversion of control in our application by moving objects binding from compile time to runtime
 What is static binding and dynamic binding?

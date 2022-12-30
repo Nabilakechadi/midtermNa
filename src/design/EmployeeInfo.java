@@ -1,11 +1,10 @@
 package design;
 
-
 import java.io.*;
 
-import javax.sql.*servlet.*;
 
-import javax.sql.*servlet.http.*;
+
+
 
 import java.sql.*;
 
@@ -148,7 +147,7 @@ import java.util.Scanner;
 
 
 
-public class EmployeeInfo{
+/*public class EmployeeInfo{
 
 	private int Emp_id;
 
@@ -262,4 +261,4 @@ public class FortuneEmployee extends HttpServlet
 
 	}
 
-}
+}*/

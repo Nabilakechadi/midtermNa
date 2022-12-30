@@ -194,4 +194,8 @@ public class ConnectToSqlDB {
 
 
     }
+
+    public int compute(int fInput) {
+        return 0;
+    }
 }

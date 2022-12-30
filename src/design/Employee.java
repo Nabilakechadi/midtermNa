@@ -1,116 +1,99 @@
-package design;
-import java.util.Scanner;
-/*public interface Employee {
-    int EmployeeId = employeeId ;
+/*package design;
+public interface Employee {
+    class EmployeeDetails {
+        //Creating properties of Employee class
+        int employee_id;
+        int salary;
+        int benefitLayout;
+        String name;
+        String department;
 
-    public static void main (String [] args ){
-         public void setEmployeeId()
-                { int employeeId;
-             EmployeeId = employeeId;
-             public void getEmployeeId(){
-                 return employeeId;
-                 Scanner sc = new Scanner(System.in);
-                Employee emp = new Employee();
-                System.out.println("Enter Id:" + setEmployeeId(sc.nextInt()));
+        //Getter and setters for getting and setting properties
 
-            }
 
-        }
-    }
-}*/
-
-    /*Employee is an Interface which contains multiple unimplemented methods.Again few methods
+	/*Employee is an Interface which contains multiple unimplemented methods.Again few methods
 	has been declared in below. you need to brainstorm to add more methods to meet the business requirements.
+	*/
+        //please read the following method and understand the business requirements of these following methods
+        //and then implement these in a concrete class.
 
-	//please read the following method and understand the business requirements of these following methods
-	//and then implement these in a concrete class.
-
-	//employeeId() will return employee id.
-	public int employeeId();
-
-	//employeeName() will return employee name
-	public String employeeName();
-	
-	//assignDepartment() will assign employee to departments
-    public void assignDepartment();
-	
-	//calculate employee salary
-	public int calculateSalary();
-	
-	//employee benefit
-	public void benefitLayout();
-
-}*/
-
-
-   /*     public int employeeId;
-        public String employeeName;
-        public double salary;
-        public double netSalary;
-
-        //setters
-        public void setEmployeeId(int employeeId) {
-            this.employeeId = employeeId;
+        //employeeId() will return employee id.
+       /* public int getEmployee_id() {
+            return employee_id;
         }
 
-        public void setEmployeeName(String employeeName) {
-            this.employeeName = employeeName;
-        }
 
-        public void setSalary(double salary) {
-            this.salary = salary;
-        }
-
-        public void netSalary(double netSalary) {
-            this.netSalary = netSalary;
-        }
-
-        //getters
-        public int getEmployeeId() {
-            return employeeId;
-        }
-
+        //employeeName() will return employee name
         public String getEmployeeName() {
-            return employeeName;
+            return name;
         }
 
-        public double getSalary() {
+        //assignDepartment() will assign employee to departments
+        public void getDepartment() {
+            return department;
+        }
+
+        //calculate employee salary
+        public int getSalary() {
             return salary;
         }
 
-        public double getNetSalary() {
-            return netSalary;
+        //employee benefit
+        public void getBenefitLayout() {
+            return benefitLayout;
         }
 
-        public void calculateNetSalary(int pfpercentage) {
-
-            pfamount = salary * pfpercentage;
-            netSalary = salary - pfamount;
-        }
-
-
+        public String toString() {
+            return "Employee [emp_id = " + employee_id + ",name = " + name + ", + ",
+            department = " + department +", salary = " + salary + "
+            ",benefitlayout = " + benefitLayout() + "]";
+        }*/
 
 
-     public static    void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            Employee emp = new Employee();
+        //Creating main class
 
-            System.out.println("Enter Id:" + setEmployeeId(sc.nextInt()))
-            System.out.println("Enter Name:" + setEmployeeName(sc.next()));
-            System.out.println("Enter salary:" + setSalary(sc.nextDouble()));
+        //main() method start
+       /* public static void main(String args[]) {
 
-            System.out.println("Enter PF percentage:");
-            double pfpercentage = sc.nextDouble();
-
-            public static Employee getEmployeeDetails () {
-
-
-
-
-
-
-            }
-
+            //Creating object of EmployeeDetails class
+            EmployeeDetails emp = new EmployeeDetails();
+            //Setting values to the properties
+            emp.getEmployee_id(101);
+            emp.getEmployeeName("Nabila");
+            emp.getDepartment("IT");
+            emp.getSalary(15000);
+            emp.getBenefitLayout(30);
+            //Showing Employee details
+            System.out.println(emp);
         }
     }
 }*/
+
+
+           /* //Getting salary using getter
+            int sal = emp.getSalary();
+            int increment = 0;
+            //Incrementing salary based on condition
+            if ((sal >= 1000) && (sal <= 1500)) {
+                //incrementing salary 2%
+                increment += (sal * 2) / 100;
+                sal = sal + increment;
+
+                emp.setSalary(sal);
+                System.out.println("\n Salary is incremented \n");
+                System.out.println(emp);
+
+            } else if ((sal >= 1500) && (sal <= 20000)) {
+                //incrementing salary 5%
+                increment += (sal * 5) / 100;
+                sal = sal + increment;
+
+                emp.setSalary(sal);
+                System.out.println("\n Salary is incremented \n");
+                System.out.println(emp);
+            } else {
+                System.out.println("\n Salary is not incremented \n");
+                System.out.println(emp);
+            }
+        }*/
+

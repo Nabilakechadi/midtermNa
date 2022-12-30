@@ -138,7 +138,7 @@ import java.io.*;
 
 
 }*/
-package employee.info.system;
+/*package employee.info.system;
 
 import java.io.*;
 
@@ -262,4 +262,4 @@ public class FortuneEmployee extends HttpServlet
 
 	}
 
-}
+}*/

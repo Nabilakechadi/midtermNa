@@ -1,6 +1,5 @@
 package math.problems;
-import java.io.*;
-import java.util.*;
+
 public class FindMissingNumber {
 
     public static void findMissing(int arr[], int N) {

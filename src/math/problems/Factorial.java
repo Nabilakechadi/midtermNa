@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Factorial {
 
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number to which you need to find the factorial");
         int num = sc.nextInt();
@@ -18,23 +18,15 @@ public class Factorial {
         else
             return 1;
     }
-}*/
-public static void main (String args [])
-{
-    int n,f=1;
-    Scanner sc= new Scanner(System.in);
-    System.out.println("Enter the number:- ");
-    n=sc.nextInt();
-    if(n==0)
-    {
-        System.out.println(+ n );
+
+    public int calculate(int indexTest1) {
+        return 0;
     }
 }
-}
 
-/*
 
- * Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120.
+
+ /* Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120.
  * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
  *
  */

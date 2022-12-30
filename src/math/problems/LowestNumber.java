@@ -1,51 +1,98 @@
 package math.problems;
 
-import databases.ConnectToSqlDB;
+import java.sql.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/*/public class LowestNumber {
+public class LowestNumber {
 
 	public static void main(String[] args) {
-		/*
-		 * Write java solution to find the lowest number from this array.
-		 * Use one of the databases from mysql or mongodb to store and to retrieve.
-		 */
-	/*	int temp, size;
-		int array[] = {10, 20, 25, 63, 96, 57};
-		size = array.length;
 
-		for(int i = 0; i<size; i++ ){
-			for(int j = i+1; j<size; j++){
-				if(array[i]>array[j]){
-					temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
-				}
+		int[] initializedArray
+
+				= new int[] { 25, 110, 74, 75, 5 };
+
+
+
+		System.out.println("Given array ");
+
+
+
+		for (int i = 0; i < initializedArray.length; i++) {
+
+
+
+			System.out.println(initializedArray[i]);
+
+		}
+
+
+
+// Initialize minValue with first element of array.
+
+		int minValue = initializedArray[0];
+
+
+
+// Loop through the array
+
+		for (int i = 0; i < initializedArray.length; i++) {
+
+
+
+// Compare elements of array with minValue and
+
+// if condition true, make minValue to that
+
+// element
+
+
+
+			if (initializedArray[i] < minValue)
+
+
+
+				minValue = initializedArray[i];
+
+		}
+
+
+
+		System.out.println(
+
+				"Smallest element present in given array: "
+
+						+ minValue);
+
+	}
+
+	public static class connection {
+
+		Connection con = null;
+
+		public static Connection connectDB() throws ClassNotFoundException {
+
+			try {
+
+
+				Class.forName("com.mysql.cj.jdbc.Driver");
+
+				Connection con = DriverManager.getConnection(
+
+						"jdbc:mysql://localhost:3306/nadb",
+
+						"root92", "0202");
+
+
+				return con;
+
+			} catch (SQLException e) {
+
+				System.out.println(e);
 			}
+
+
+			return null;
 		}
-		System.out.println("Smallest element of the array is:: "+array[0]);
+
 	}
 }
 
-
-		//find lowest number from the array
-
-		/*ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-		List<String> lowestValue = new ArrayList<String>();
-		try {
-			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
-			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("Data is reading from the Table (tbl_primenumber) and displaying to the console");
-		for(String st:lowestValue){
-			System.out.println(st);
-		}
-	}
-
-}
-*/

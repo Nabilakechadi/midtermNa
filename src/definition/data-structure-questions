@@ -124,14 +124,25 @@ Draw a table with time complexity in which it will summarize all the data struct
 
 
 
-Data structure	Access	Search	Insertion	Deletion
-Array	O(1)	O(N)	O(N)	O(N)
-Stack	O(N)	O(N)	O(1)	O(1)
-Queue	O(N)	O(N)	O(1)	O(1)
-Singly Linked list	O(N)	O(N)	O(1)	O(1)
-Doubly Linked List	O(N)	O(N)	O(1)	O(1)
-Hash Table	O(1)	O(1)	O(1)	O(1)
+Datastructure	Access	Search	Insertion	Deletion
+------------------------------------------------------
+Array	        O(1)	     O(N)	 O(N)	    O(N)
+-------------------------------------------------------
+Stack           O(N)	     O(N)	 O(1)	    O(1)
+-------------------------------------------------------
+Queue       	O(N)	     O(N)	 O(1)	    O(1)
+--------------------------------------------------------
+Singly Linked list	O(N)	O(N)	O(1)	    O(1)
+--------------------------------------------------------
+Doubly Linked List	O(N)	O(N)	O(1)	    O(1)
+------------------------------------------------------
+Hash Table	    O(1)	    O(1)	    O(1)    0(1)
+------------------------------------------------------
 Binary Search Tree	O(logN)	O(logN)	O(logN)	O(logN)
-AVL Tree	O(logN)	O(logN)	O(logN)	O(logN)
-B Tree	O(logN)	O(logN)	O(logN)	O(logN)
-Red Black Tree	O(logN)	O(logN)	O(logN)	O(logN)
+--------------------------------------------------------
+AVL Tree	 O(logN)	O(logN) 	O(logN) 	O(logN)
+--------------------------------------------------------
+B Tree  	O(logN)	    O(logN)	     O(logN)	  O(logN)
+--------------------------------------------------------
+Red Black Tree	O(logN)	O(logN)  	 O(logN)	   O(logN)
+---------------------------------------------------------
