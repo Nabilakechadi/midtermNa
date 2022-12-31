@@ -1,19 +1,20 @@
-/*package datastructure;
+package datastructure;
+import java.util.Collections;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
 
 public class UseMap {
+    public static void main(String[] args) {
+            Map<String, List<String>> list = new HashMap<String, List<String>>();
+            list.put("IT", Collections.singletonList(("David, Jhon, Jessica")));
+        list.put("HR", Collections.singletonList(("Melissa, Karen, Bryan")));
 
-	public static <DataObject> void main(String[] args) {
-		/*
-		 * Demonstrate how to use Map that includes storing and retrieving elements.
-		 * Add List<String> into a Map. Like, Map<String, List<string>> list = new HashMap<String, List<String>>();
-		 * Use For Each loop and while loop with Iterator to retrieve data.
-		 *
-		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
-		 */
-	/*	Map<String, List<string>> list = new HashMap<String, List<String>>();
-	}*/
+
+            for (String i : list.keySet()) {
+                System.out.println("key: " + i + " value: " + list.get(i));
+            }
+        }
+    }
 
 

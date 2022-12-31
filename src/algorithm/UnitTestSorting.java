@@ -1,94 +1,46 @@
-/*package algorithm;
+package algorithm;
 
 import  static org.junit.Assert.assertArrayEquals;
+
+import org.junit.Assert;
 import org.junit.Test;
 
-public class UnitTestSorting {
+public class UnitTestSorting<unSortedArray> {
 
-    /*
-      This class is about Unit testing for Sorting Algorithm.
-     */
-  /*  public static void main(String[] args) {
-        int[] unSortedArray = {6, 9, 2, 5, 1, 0, 4};
-        int[] sortedArray = {0, 1, 2, 4, 5, 6, 9};
-        //Create Sort object
-        Sort sort = new Sort();
-        //apply unsorted array to selectionSort.
-        sort.selectionSort(unSortedArray);
-        //verify if the unsorted array is sorted by the selection sort algorithm.
-        try {
-            Assert.assertEquals(sortedArray, unSortedArray);
-        } catch (Exception ex) {
-            ex.getMessage();
-        }
 
-        //Now implement Unit test for rest of the soring algorithm...................below
-        System.out.println("After Selection Sort");
-        for (int i : sortedArray) {
-            System.out.print(i + "");
-        }
-    }
-    public void checkIfDataSorted() {
-        Sort sort = new Sort();
-        int[] sortedArray;
-        int[] unSortedArray;
-        try {
-            unSortedArray = new int[]{1, 5, 4, 8, 2, 6, 9};
-            sortedArray = sort.selectionSort(unSortedArray);
-            System.out.println(assertArrayEquals(unSortedArray.sortedArray));
-            unSortedArray = new int[]{5, 1, 7, 9, 3, 2, 6};
-            sortedArray = sort.selectionSort(unSortedArray);
-            System.out.println(asserArrayEquals(unSortedArray.sortedArray));
-        } catch (Exception.ex) {
-            ex.getMessage();
-        }
-    }
-        }*/
+public static void main(String[] args) {
+
+
+                int [] unSortedArray = {6,9,2,5,1,0,4};
+                int [] sortedArray =   {0,1,2,4,5,6,9};
+
+                Sort sort = new Sort();
+
+                sort.selectionSort(unSortedArray);
+
+                try {
+                        Assert.assertEquals(sortedArray, unSortedArray);
+                }catch(Exception ex){
+                        ex.getMessage();
+                }
 
 
 
 
 
 
+            System.out.println("After Selection Sort");
 
+    for (int i : sortedArray) {
 
-
-
-
-
-
-
-/*public static void main(String[] args) {
-
-        int [] unSortedArray = {6,9,2,5,1,0,4};
-
-        int [] sortedArray = {0,1,2,4,5,6,9};
-
-        System.out.println("\n");
-
-//Create Sort object
-
-        Sort sort = new Sort();
-
-// //apply unsorted array to selectionSort.
-
-        sortedArray = sort.selectionSort(unSortedArray);
-
-// //verify if the unsorted array is sorted by the selection sort algorithm.
-
-//Now implement Unit test for rest of the soring algorithm...................below
-
-        System.out.println("After Selection Sort");
-
-        for(int i:sortedArray){
-
-            System.out.print(i+" ");
-
-        }
+        System.out.print(i + " ");
 
     }
 
-    @Test
+
+    }
+
+
 
     public void checkIfDataSorted() {
 
@@ -102,13 +54,13 @@ public class UnitTestSorting {
 
             unSortedArray = new int []{1,5,4,8,2,6,9};
 
-            sortedArray = sort.selectionSort(unSortedArray);
+            sort.selectionSort(unSortedArray);
 
             System.out.println();
 
-            unSortedArray = new int []{5,1,7,9,3,2,6};
+           unSortedArray = new int []{5,1,7,9,3,2,6};
 
-            sortedArray = sort.selectionSort(unSortedArray);
+            sort.selectionSort(unSortedArray);
 
             System.out.println();
 
@@ -120,4 +72,4 @@ public class UnitTestSorting {
 
     }
 
-}*/
+}
