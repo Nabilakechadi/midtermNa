@@ -1,35 +1,22 @@
 package math.problems;
-
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
-
-import static org.junit.Assert.assertEquals;
-
-/*public class UnitTestingMath {
-    int testIndex = 2 ;
-    int expectedResult = 1;
-
-    assertEquals(expectedResult, fibonacci.calculate(testIndex));
 
 
-        //Apply Unit testing into each classes and methods in this package.
-        Factorial factorial;
 
-        factorial = new Factorial();
-        int indexTest1 = 5;
-        int expectedResult = 120;
+public class UnitTestingMath {
+    public static void main(String[] args) {
+        int num = 5;
 
-        assertEquals(expectedResult, factorial.calculate(indexTest1));
-
+            Assert.assertEquals(120, Factorial.multiplyNumbers(num));
+        }
     }
-        }*/
 
 
 
 
-
-   /* private Fibonacci fibonacci;
+   /*rivate static Fibonacci fibonacci;
 
     @Before
     public void setUp() {
@@ -38,13 +25,14 @@ import static org.junit.Assert.assertEquals;
 
     @Test
     public void calculate() {
-        int testIndex = 2 ;
-        int expectedResult = 1;
+      long expected=2;
+      long actual;
 
-        assertEquals(expectedResult, fibonacci.calculate(testIndex));
+        assertEquals(expected, fibonacci.calculate(2));
     }
-}
-*/
+}*/
+
+
 
 
 

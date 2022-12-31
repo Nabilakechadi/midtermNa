@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Factorial {
 
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number to which you need to find the factorial");
         int num = sc.nextInt();
@@ -19,9 +19,7 @@ public class Factorial {
             return 1;
     }
 
-    public int calculate(int indexTest1) {
-        return 0;
-    }
+
 }
 
 

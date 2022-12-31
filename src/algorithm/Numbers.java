@@ -1,15 +1,17 @@
-/*package algorithm;
+package algorithm;
+
 
 import databases.ConnectToSqlDB;
 
-import java.util.List;
-import java.util.Random;
-
+import java.util.*;
 public class Numbers {
 
 
+
+
+
     /*
-o
+     * Show all the different kind of sorting algorithm by applying into (num array).
      * Display the execution time for each sorting.Example in below.
      *
      * Use any databases[MongoDB, Oracle or MySql] to store data and retrieve data.
@@ -18,77 +20,60 @@ o
      *
      */
 
-  /*  public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-        int[] num = new int[1000000];
+        int[] num = new int[200];
         storeRandomNumbers(num);
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        //Selection Sort
-        class Sort {
-            public long executionTime;
-
-            public void selectionSort(int[] num) {
-            }
-
-            public void insertionSort(int[] num) {
-            }
-        }
+//Selection Sort
         Sort algo = new Sort();
         algo.selectionSort(num);
         long selectionSortExecutionTime = algo.executionTime;
-        System.out.println("Total Execution Time of " + num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+        System.out.println("Total Execution Time of " + num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " nano sec");
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
-        List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
-        printValue(numbers);
+        ArrayList<String> numbers = (ArrayList<String>) connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
+//printValue(numbers);
         int n = num.length;
+
         randomize(num, n);
-        //Insertion Sort
+//Insertion Sort
         algo.insertionSort(num);
         long insertionSortExecutionTime = algo.executionTime;
-        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " nano sec");
 
-        //By following above, Continue for rest of the Sorting Algorithm....
-
-
-        //Come to conclusion about which Sorting Algo is better in given data set.
-
+        randomize(num, n);
+//bubble Sort
+        algo.bubbleSort(num);
+        long bubbleSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " nano sec");
 
     }
 
-    private static void randomize(int[] num, int n) {
-    }
-
-   /* private static void printValue(List<String> numbers) {
-    }
-
-
-   /* public static void storeRandomNumbers(int[] num) {
+    //-----------------------
+    public static void storeRandomNumbers(int[] num) {
         Random rand = new Random();
         for (int i = 0; i < num.length; i++) {
             num[i] = rand.nextInt(1000000);
         }
     }
+
+    //----------------------------
+    public static void randomize(int arr[], int n) {
+        Random r = new Random();
+// Start from the last element and swap one by one. We don't
+// need to run for the first element that's why i > 0
+        for (int i = n - 1; i > 0; i--) {
+            int j = r.nextInt(i);
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+
+    //------------------------
+    public static void printValue(ArrayList<String> array) {
+        for (String st : array) {
+            System.out.println(st);
+        }
+    }
 }
-
-
-		/*public static void randomize ( int arr[], int n)
-		{
-			Random r = new Random();
-			// Start from the last element and swap one by one. We don't
-			// need to run for the first element that's why i > 0
-			for (int i = n - 1; i > 0; i--) {
-				int j = r.nextInt(i);
-				int temp = arr[i];
-				arr[i] = arr[j];
-				arr[j] = temp;
-			}
-		}
-
-		public static void printValue (List < String > array) {
-			for (String st : array) {
-				System.out.println(st);
-			}
-		}
-}*/
-
-

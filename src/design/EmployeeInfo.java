@@ -1,4 +1,4 @@
-/*package design;
+package design;
 
 /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class

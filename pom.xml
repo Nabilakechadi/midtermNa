@@ -36,6 +36,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.sort-dependencies</groupId>
+            <artifactId>com.squareup.sort-dependencies.gradle.plugin</artifactId>
+            <version>0.1</version>
+        </dependency>
     </dependencies>
 
 </project>
