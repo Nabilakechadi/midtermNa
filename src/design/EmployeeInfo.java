@@ -1,60 +1,66 @@
 package design;
+import java.io.*;
 
-/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
- * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
- * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
- * go to FortuneEmployee class to apply all the fields and attributes.
- *
- * Important: YOU MUST USE the
- * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
- * Use all kind of keywords(super,this,static,final........)
- * Implement Nested class.
- * Use Exception Handling.
- *
- */
 
-/*
- * declare few static and final fields and some non-static fields
- */
-/*static String companyName;
+import java.util.Scanner;
 
-/*
- * You must implement the logic for below 2 methods and
- * following 2 methods are prototype as well for other methods need to be design,
- * as you will come up with the new ideas.
- */
+public class EmployeeInfo {
 
-/*
- * you must have multiple constructor.
- * Must implement below constructor.
- */
-/*public EmployeeInfo(int employeeId){
+    /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
+     * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
+     * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
+     * go to FortuneEmployee class to apply all the fields and attributes.
+     *
+     * Important: YOU MUST USE the
+     * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
+     * Use all kind of keywords(super,this,static,final........)
+     * Implement Nested class.
+     * Use Exception Handling.
+     *
+     */
 
-        }
-public EmployeeInfo(String name, int employeeId){
+    /*
+     * declare few static and final fields and some non-static fields
+     */
+    static String companyName;
 
-        }
+    /*
+     * You must implement the logic for below 2 methods and
+     * following 2 methods are prototype as well for other methods need to be design,
+     * as you will come up with the new ideas.
+     */
 
-/*
- * This methods should calculate Employee bonus based on salary and performance.
- * Then it will return the total yearly bonus. So you need to implement the logic.
- * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on.
- * You can set arbitrary number for performance.
- * So you probably need to send 2 arguments.
- *
- */
-/*public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+    /*
+     * you must have multiple constructor.
+     * Must implement below constructor.
+     */
+    public EmployeeInfo(int employeeId){
+
+    }
+    public EmployeeInfo(String name, int employeeId){
+
+    }
+
+    /*
+     * This methods should calculate Employee bonus based on salary and performance.
+     * Then it will return the total yearly bonus. So you need to implement the logic.
+     * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on.
+     * You can set arbitrary number for performance.
+     * So you probably need to send 2 arguments.
+     *
+     */
+    public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
         int total=0;
         return total;
-        }
+    }
 
-/*
- * This methods should calculate Employee Pension based on salary and numbers of years with the company.
- * Then it will return the total pension. So you need to implement the logic.
- * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
- *
- */
-/*public static int calculateEmployeePension(){
+    /*
+     * This methods should calculate Employee Pension based on salary and numbers of years with the company.
+     * Then it will return the total pension. So you need to implement the logic.
+     * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
+     *
+     */
+    public static int calculateEmployeePension(){
         int total=0;
         Scanner sc  = new Scanner(System.in);
         System.out.println("Please enter start date in format (example: May,2015): ");
@@ -67,68 +73,119 @@ public EmployeeInfo(String name, int employeeId){
         //implement numbers of year from above two dates
         //Calculate pension
 
+import java.io.*;
 
+import javax.servlet.*;
+
+import javax.servlet.http.*;
+
+import java.sql,*;
+
+        public class EmployeeInfo{
+
+            private int Emp_id;
+
+            private String Emp_name;
+
+            private int Emp_age;
+
+            public int getid(){
+
+                return Emp_id;
+
+            }
+
+            public void setid(){
+
+                this.Emp_id=Emp_id;
+
+            }
+
+            public String getname(){
+
+                return Emp_name;
+
+            }
+
+            public void setname(){
+
+                this.Emp_name=Emp_name;
+
+            }
+
+            public int getage(){
+
+                return Emp_age;
+
+            }
+
+            public void setage(){
+
+                this.Emp_age=Emp_age;
+
+            }
+
+        }
 
         return total;
-        }
-private static class DateConversion {
-
-    public DateConversion(Months months){}
-    public static String convertDate(String date) {
-        String [] extractMonth = date.split(",");
-        String givenMonth = extractMonth[0];
-        int monthDate = whichMonth(givenMonth);
-        String actualDate = monthDate + "/" + extractMonth[1];
-        return actualDate;
     }
+    private static class DateConversion {
 
-    public static int whichMonth(String givenMonth) {
-        Months months = Months.valueOf(givenMonth);
-        int date = 0;
-        switch (months) {
-            case January:
-                date = 1;
-                break;
-            case February:
-                date = 2;
-                break;
-            case March:
-                date = 3;
-                break;
-            case April:
-                date = 4;
-                break;
-            case May:
-                date = 5;
-                break;
-            case June:
-                date = 6;
-                break;
-            case July:
-                date = 1;
-                break;
-            case August:
-                date = 1;
-                break;
-            case September:
-                date = 1;
-                break;
-            case October:
-                date = 1;
-                break;
-            case November:
-                date = 1;
-                break;
-            case December:
-                date = 1;
-                break;
-            default:
-                date = 0;
-                break;
+        public DateConversion(Months months){}
+        public static String convertDate(String date) {
+            String [] extractMonth = date.split(",");
+            String givenMonth = extractMonth[0];
+            int monthDate = whichMonth(givenMonth);
+            String actualDate = monthDate + "/" + extractMonth[1];
+            return actualDate;
         }
-        return date;
 
+        public static int whichMonth(String givenMonth) {
+            Months months = Months.valueOf(givenMonth);
+            int date = 0;
+            switch (months) {
+                case January:
+                    date = 1;
+                    break;
+                case February:
+                    date = 2;
+                    break;
+                case March:
+                    date = 3;
+                    break;
+                case April:
+                    date = 4;
+                    break;
+                case May:
+                    date = 5;
+                    break;
+                case June:
+                    date = 6;
+                    break;
+                case July:
+                    date = 1;
+                    break;
+                case August:
+                    date = 1;
+                    break;
+                case September:
+                    date = 1;
+                    break;
+                case October:
+                    date = 1;
+                    break;
+                case November:
+                    date = 1;
+                    break;
+                case December:
+                    date = 1;
+                    break;
+                default:
+                    date = 0;
+                    break;
+            }
+            return date;
+
+        }
     }
 }
-}
-        Footer*/

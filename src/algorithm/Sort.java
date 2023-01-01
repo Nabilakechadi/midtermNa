@@ -12,7 +12,7 @@ public class Sort {
         private long startTime, stopTime;
         public long executionTime;
         //--------------------
-        public void selectionSort ( int num[] ){
+        public void selectionSort (int[] num){
             startTime = System.nanoTime();
             int N = num.length;
             for (int i = 0; i < N - 1; i++) {
@@ -29,7 +29,7 @@ public class Sort {
             executionTime = stopTime - startTime;
         }
         //---------------------
-        public void insertionSort ( int num[]){
+        public void insertionSort (int[] num){
             startTime = System.nanoTime();
             int n = num.length;
             for (int i = 1; i < n; ++i) {
@@ -46,7 +46,7 @@ public class Sort {
             executionTime = stopTime - startTime;
         }
         //------------------------
-        public void bubbleSort ( int num[]){
+        public void bubbleSort (int[] num){
             startTime = System.nanoTime();
             int N = num.length;
             for (int i = 0; i < N - 1; i++)
@@ -61,7 +61,7 @@ public class Sort {
         }
 
 
-        private String DATABASE_URL = "jdbc:mysql://localhost:3306/SortingNumbers";
+        private String DATABASE_URL = "jdbc:mysql://localhost:3306/nabdb";
         private Connection connection;
         private Statement statement;
         private ResultSet resultSet;
